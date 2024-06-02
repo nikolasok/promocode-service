@@ -1,0 +1,16 @@
+services:
+  # default configuration for services in *this* file
+  _defaults:
+    autowire: true      # Automatically injects dependencies in your services.
+    autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+  App\Infrastructure\Database\Database:
+    public: true
+    arguments:
+      $dsn: '%env(string:DB_DSN)%'
+      $username: '%env(string:DB_USERNAME)%'
+      $password: '%env(string:DB_PASSWORD)%'
+
+  App\Infrastructure\Database\Listener\DatabaseOnRequestTerminateListener:
+    tags:
+      - { name: 'app.listener', priority: 10000}

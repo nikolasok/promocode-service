@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /app/src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="_css/bootstrap.min.css?v=11.0.3" rel="stylesheet" type="text/css">
+  <link href="_css/nv.d3.min.css?v=11.0.3" rel="stylesheet" type="text/css">
+  <link href="_css/style.css?v=11.0.3" rel="stylesheet" type="text/css">
+  <link href="_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">/app/src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Command/GeneratePromoCodeCommand.php.html#11">App\Command\GeneratePromoCodeCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Message/Response.php.html#7">App\Infrastructure\Http\Message\Response</a></td><td class="text-right">46%</td></tr>
+       <tr><td><a href="Infrastructure/Database/Listener/DatabaseOnRequestTerminateListener.php.html#10">App\Infrastructure\Database\Listener\DatabaseOnRequestTerminateListener</a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Kernel.php.html#23">App\Infrastructure\Http\Kernel</a></td><td class="text-right">70%</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#7">App\Infrastructure\Database\Database</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Infrastructure/Session/NativeSessionService.php.html#7">App\Infrastructure\Session\NativeSessionService</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Router.php.html#11">App\Infrastructure\Http\Router</a></td><td class="text-right">76%</td></tr>
+       <tr><td><a href="Infrastructure/Lock/Lock.php.html#11">App\Infrastructure\Lock\Lock</a></td><td class="text-right">82%</td></tr>
+       <tr><td><a href="Infrastructure/Listener/ListenerService.php.html#9">App\Infrastructure\Listener\ListenerService</a></td><td class="text-right">84%</td></tr>
+       <tr><td><a href="Http/Controller/PromoCodeController.php.html#15">App\Http\Controller\PromoCodeController</a></td><td class="text-right">87%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Message/Request.php.html#7">App\Infrastructure\Http\Message\Request</a></td><td class="text-right">88%</td></tr>
+       <tr><td><a href="Service/PromoCode/Repository/PromoCodeRepository.php.html#10">App\Service\PromoCode\Repository\PromoCodeRepository</a></td><td class="text-right">89%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Command/GeneratePromoCodeCommand.php.html#11">App\Command\GeneratePromoCodeCommand</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#7">App\Infrastructure\Database\Database</a></td><td class="text-right">21</td></tr>
+       <tr><td><a href="Infrastructure/Http/Kernel.php.html#23">App\Infrastructure\Http\Kernel</a></td><td class="text-right">17</td></tr>
+       <tr><td><a href="Infrastructure/Http/Message/Response.php.html#7">App\Infrastructure\Http\Message\Response</a></td><td class="text-right">14</td></tr>
+       <tr><td><a href="Infrastructure/Listener/ListenerService.php.html#9">App\Infrastructure\Listener\ListenerService</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Service/PromoCode/Repository/PromoCodeRepository.php.html#10">App\Service\PromoCode\Repository\PromoCodeRepository</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Infrastructure/Http/Router.php.html#11">App\Infrastructure\Http\Router</a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="Infrastructure/Lock/Lock.php.html#11">App\Infrastructure\Lock\Lock</a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="Infrastructure/Session/NativeSessionService.php.html#7">App\Infrastructure\Session\NativeSessionService</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Infrastructure/Http/Message/Request.php.html#7">App\Infrastructure\Http\Message\Request</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Http/Controller/PromoCodeController.php.html#15">App\Http\Controller\PromoCodeController</a></td><td class="text-right">5</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Command/GeneratePromoCodeCommand.php.html#13"><abbr title="App\Command\GeneratePromoCodeCommand::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Command/GeneratePromoCodeCommand.php.html#17"><abbr title="App\Command\GeneratePromoCodeCommand::run">run</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#19"><abbr title="App\Infrastructure\Database\Database::__destruct">__destruct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#40"><abbr title="App\Infrastructure\Database\Database::disconnect">disconnect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infrastructure/Database/Listener/DatabaseOnRequestTerminateListener.php.html#16"><abbr title="App\Infrastructure\Database\Listener\DatabaseOnRequestTerminateListener::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Kernel.php.html#71"><abbr title="App\Infrastructure\Http\Kernel::terminate">terminate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Message/Response.php.html#94"><abbr title="App\Infrastructure\Http\Message\Response::sendHeaders">sendHeaders</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Kernel.php.html#40"><abbr title="App\Infrastructure\Http\Kernel::handle">handle</abbr></a></td><td class="text-right">36%</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#47"><abbr title="App\Infrastructure\Database\Database::transactional">transactional</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Infrastructure/Session/NativeSessionService.php.html#9"><abbr title="App\Infrastructure\Session\NativeSessionService::start">start</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#82"><abbr title="App\Infrastructure\Database\Database::rollBack">rollBack</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#71"><abbr title="App\Infrastructure\Database\Database::commit">commit</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Message/Request.php.html#37"><abbr title="App\Infrastructure\Http\Message\Request::getIpLong">getIpLong</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Infrastructure/Http/Router.php.html#22"><abbr title="App\Infrastructure\Http\Router::getHandler">getHandler</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Infrastructure/Listener/ListenerService.php.html#19"><abbr title="App\Infrastructure\Listener\ListenerService::__construct">__construct</abbr></a></td><td class="text-right">78%</td></tr>
+       <tr><td><a href="Infrastructure/Lock/Lock.php.html#47"><abbr title="App\Infrastructure\Lock\Lock::release">release</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Infrastructure/Lock/Lock.php.html#28"><abbr title="App\Infrastructure\Lock\Lock::acquire">acquire</abbr></a></td><td class="text-right">81%</td></tr>
+       <tr><td><a href="Service/PromoCode/Repository/PromoCodeRepository.php.html#16"><abbr title="App\Service\PromoCode\Repository\PromoCodeRepository::getFreePromoCode">getFreePromoCode</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="Http/Controller/PromoCodeController.php.html#29"><abbr title="App\Http\Controller\PromoCodeController::getPromoCode">getPromoCode</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Service/PromoCode/Repository/PromoCodeRepository.php.html#28"><abbr title="App\Service\PromoCode\Repository\PromoCodeRepository::getPromoCodeByDevice">getPromoCodeByDevice</abbr></a></td><td class="text-right">87%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Command/GeneratePromoCodeCommand.php.html#17"><abbr title="App\Command\GeneratePromoCodeCommand::run">run</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Infrastructure/Http/Kernel.php.html#40"><abbr title="App\Infrastructure\Http\Kernel::handle">handle</abbr></a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="Infrastructure/Http/Router.php.html#22"><abbr title="App\Infrastructure\Http\Router::getHandler">getHandler</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Infrastructure/Listener/ListenerService.php.html#19"><abbr title="App\Infrastructure\Listener\ListenerService::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#40"><abbr title="App\Infrastructure\Database\Database::disconnect">disconnect</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infrastructure/Http/Message/Response.php.html#94"><abbr title="App\Infrastructure\Http\Message\Response::sendHeaders">sendHeaders</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Infrastructure/Session/NativeSessionService.php.html#9"><abbr title="App\Infrastructure\Session\NativeSessionService::start">start</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#82"><abbr title="App\Infrastructure\Database\Database::rollBack">rollBack</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Infrastructure/Lock/Lock.php.html#47"><abbr title="App\Infrastructure\Lock\Lock::release">release</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Infrastructure/Lock/Lock.php.html#28"><abbr title="App\Infrastructure\Lock\Lock::acquire">acquire</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Http/Controller/PromoCodeController.php.html#29"><abbr title="App\Http\Controller\PromoCodeController::getPromoCode">getPromoCode</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#47"><abbr title="App\Infrastructure\Database\Database::transactional">transactional</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Infrastructure/Database/Database.php.html#71"><abbr title="App\Infrastructure\Database\Database::commit">commit</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Infrastructure/Http/Message/Request.php.html#37"><abbr title="App\Infrastructure\Http\Message\Request::getIpLong">getIpLong</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Service/PromoCode/Repository/PromoCodeRepository.php.html#16"><abbr title="App\Service\PromoCode\Repository\PromoCodeRepository::getFreePromoCode">getFreePromoCode</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Service/PromoCode/Repository/PromoCodeRepository.php.html#28"><abbr title="App\Service\PromoCode\Repository\PromoCodeRepository::getPromoCodeByDevice">getPromoCodeByDevice</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.3</a> using <a href="https://www.php.net/" target="_top">PHP 8.3.7</a> and <a href="https://phpunit.de/">PHPUnit 11.1.3</a> at Sun Jun 2 16:15:11 UTC 2024.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="_js/jquery.min.js?v=11.0.3" type="text/javascript"></script>
+  <script src="_js/d3.min.js?v=11.0.3" type="text/javascript"></script>
+  <script src="_js/nv.d3.min.js?v=11.0.3" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,0,0,0,0,1,1,0,4,5,0,14], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([7,0,0,0,1,0,1,2,4,5,2,48], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,5,"<a href=\"Command\/GeneratePromoCodeCommand.php.html#11\">App\\Command\\GeneratePromoCodeCommand<\/a>"],[87.5,5,"<a href=\"Http\/Controller\/PromoCodeController.php.html#15\">App\\Http\\Controller\\PromoCodeController<\/a>"],[75,17,"<a href=\"Infrastructure\/Database\/Database.php.html#7\">App\\Infrastructure\\Database\\Database<\/a>"],[100,0,"<a href=\"Infrastructure\/Database\/Exception\/LockTimeout.php.html#7\">App\\Infrastructure\\Database\\Exception\\LockTimeout<\/a>"],[100,0,"<a href=\"Infrastructure\/Database\/Exception\/StmtException.php.html#7\">App\\Infrastructure\\Database\\Exception\\StmtException<\/a>"],[50,2,"<a href=\"Infrastructure\/Database\/Listener\/DatabaseOnRequestTerminateListener.php.html#10\">App\\Infrastructure\\Database\\Listener\\DatabaseOnRequestTerminateListener<\/a>"],[100,0,"<a href=\"Infrastructure\/Http\/Exception\/HttpMethodNotAllowedException.php.html#7\">App\\Infrastructure\\Http\\Exception\\HttpMethodNotAllowedException<\/a>"],[100,0,"<a href=\"Infrastructure\/Http\/Exception\/HttpRouteNotFoundException.php.html#7\">App\\Infrastructure\\Http\\Exception\\HttpRouteNotFoundException<\/a>"],[70.83333333333334,13,"<a href=\"Infrastructure\/Http\/Kernel.php.html#23\">App\\Infrastructure\\Http\\Kernel<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/RedirectResponse.php.html#7\">App\\Infrastructure\\Http\\Message\\RedirectResponse<\/a>"],[88.88888888888889,7,"<a href=\"Infrastructure\/Http\/Message\/Request.php.html#7\">App\\Infrastructure\\Http\\Message\\Request<\/a>"],[46.15384615384615,7,"<a href=\"Infrastructure\/Http\/Message\/Response.php.html#7\">App\\Infrastructure\\Http\\Message\\Response<\/a>"],[76.47058823529412,8,"<a href=\"Infrastructure\/Http\/Router.php.html#11\">App\\Infrastructure\\Http\\Router<\/a>"],[100,0,"<a href=\"Infrastructure\/Listener\/Events\/KernelTerminateEvent.php.html#7\">App\\Infrastructure\\Listener\\Events\\KernelTerminateEvent<\/a>"],[100,2,"<a href=\"Infrastructure\/Listener\/Events\/RequestEvent.php.html#9\">App\\Infrastructure\\Listener\\Events\\RequestEvent<\/a>"],[84.21052631578947,9,"<a href=\"Infrastructure\/Listener\/ListenerService.php.html#9\">App\\Infrastructure\\Listener\\ListenerService<\/a>"],[82.6086956521739,8,"<a href=\"Infrastructure\/Lock\/Lock.php.html#11\">App\\Infrastructure\\Lock\\Lock<\/a>"],[100,2,"<a href=\"Infrastructure\/Lock\/LockService.php.html#9\">App\\Infrastructure\\Lock\\LockService<\/a>"],[100,3,"<a href=\"Infrastructure\/Session\/Listener\/SessionOnRequestListener.php.html#11\">App\\Infrastructure\\Session\\Listener\\SessionOnRequestListener<\/a>"],[75,7,"<a href=\"Infrastructure\/Session\/NativeSessionService.php.html#7\">App\\Infrastructure\\Session\\NativeSessionService<\/a>"],[100,3,"<a href=\"Infrastructure\/Template\/TemplateService.php.html#7\">App\\Infrastructure\\Template\\TemplateService<\/a>"],[100,5,"<a href=\"Infrastructure\/Test\/WebTestCase.php.html#14\">App\\Infrastructure\\Test\\WebTestCase<\/a>"],[100,2,"<a href=\"Kernel.php.html#9\">App\\Kernel<\/a>"],[100,0,"<a href=\"Service\/PromoCode\/Exception\/IpLimitReachedException.php.html#7\">App\\Service\\PromoCode\\Exception\\IpLimitReachedException<\/a>"],[100,5,"<a href=\"Service\/PromoCode\/PromoCodeService.php.html#11\">App\\Service\\PromoCode\\PromoCodeService<\/a>"],[89.74358974358975,9,"<a href=\"Service\/PromoCode\/Repository\/PromoCodeRepository.php.html#10\">App\\Service\\PromoCode\\Repository\\PromoCodeRepository<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Command\/GeneratePromoCodeCommand.php.html#13\">App\\Command\\GeneratePromoCodeCommand::__construct<\/a>"],[0,4,"<a href=\"Command\/GeneratePromoCodeCommand.php.html#17\">App\\Command\\GeneratePromoCodeCommand::run<\/a>"],[100,1,"<a href=\"Http\/Controller\/PromoCodeController.php.html#17\">App\\Http\\Controller\\PromoCodeController::__construct<\/a>"],[100,1,"<a href=\"Http\/Controller\/PromoCodeController.php.html#24\">App\\Http\\Controller\\PromoCodeController::index<\/a>"],[85.71428571428571,3,"<a href=\"Http\/Controller\/PromoCodeController.php.html#29\">App\\Http\\Controller\\PromoCodeController::getPromoCode<\/a>"],[100,1,"<a href=\"Infrastructure\/Database\/Database.php.html#12\">App\\Infrastructure\\Database\\Database::__construct<\/a>"],[0,1,"<a href=\"Infrastructure\/Database\/Database.php.html#19\">App\\Infrastructure\\Database\\Database::__destruct<\/a>"],[100,2,"<a href=\"Infrastructure\/Database\/Database.php.html#24\">App\\Infrastructure\\Database\\Database::getPdo<\/a>"],[100,1,"<a href=\"Infrastructure\/Database\/Database.php.html#33\">App\\Infrastructure\\Database\\Database::connect<\/a>"],[0,2,"<a href=\"Infrastructure\/Database\/Database.php.html#40\">App\\Infrastructure\\Database\\Database::disconnect<\/a>"],[57.14285714285714,2,"<a href=\"Infrastructure\/Database\/Database.php.html#47\">App\\Infrastructure\\Database\\Database::transactional<\/a>"],[100,2,"<a href=\"Infrastructure\/Database\/Database.php.html#60\">App\\Infrastructure\\Database\\Database::beginTransaction<\/a>"],[75,2,"<a href=\"Infrastructure\/Database\/Database.php.html#71\">App\\Infrastructure\\Database\\Database::commit<\/a>"],[66.66666666666666,3,"<a href=\"Infrastructure\/Database\/Database.php.html#82\">App\\Infrastructure\\Database\\Database::rollBack<\/a>"],[100,1,"<a href=\"Infrastructure\/Database\/Database.php.html#97\">App\\Infrastructure\\Database\\Database::createPdo<\/a>"],[100,1,"<a href=\"Infrastructure\/Database\/Listener\/DatabaseOnRequestTerminateListener.php.html#12\">App\\Infrastructure\\Database\\Listener\\DatabaseOnRequestTerminateListener::__construct<\/a>"],[0,1,"<a href=\"Infrastructure\/Database\/Listener\/DatabaseOnRequestTerminateListener.php.html#16\">App\\Infrastructure\\Database\\Listener\\DatabaseOnRequestTerminateListener::__invoke<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Kernel.php.html#28\">App\\Infrastructure\\Http\\Kernel::__construct<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Kernel.php.html#34\">App\\Infrastructure\\Http\\Kernel::boot<\/a>"],[36.84210526315789,4,"<a href=\"Infrastructure\/Http\/Kernel.php.html#40\">App\\Infrastructure\\Http\\Kernel::handle<\/a>"],[0,1,"<a href=\"Infrastructure\/Http\/Kernel.php.html#71\">App\\Infrastructure\\Http\\Kernel::terminate<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Kernel.php.html#78\">App\\Infrastructure\\Http\\Kernel::getContainer<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Kernel.php.html#83\">App\\Infrastructure\\Http\\Kernel::configureRoutes<\/a>"],[100,4,"<a href=\"Infrastructure\/Http\/Kernel.php.html#91\">App\\Infrastructure\\Http\\Kernel::configureContainer<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/RedirectResponse.php.html#9\">App\\Infrastructure\\Http\\Message\\RedirectResponse::__construct<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Request.php.html#18\">App\\Infrastructure\\Http\\Message\\Request::__construct<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Request.php.html#27\">App\\Infrastructure\\Http\\Message\\Request::getUri<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Request.php.html#32\">App\\Infrastructure\\Http\\Message\\Request::getMethod<\/a>"],[75,2,"<a href=\"Infrastructure\/Http\/Message\/Request.php.html#37\">App\\Infrastructure\\Http\\Message\\Request::getIpLong<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Request.php.html#46\">App\\Infrastructure\\Http\\Message\\Request::setDeviceId<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Request.php.html#51\">App\\Infrastructure\\Http\\Message\\Request::getDeviceId<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Response.php.html#80\">App\\Infrastructure\\Http\\Message\\Response::__construct<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Response.php.html#84\">App\\Infrastructure\\Http\\Message\\Response::getContent<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Response.php.html#89\">App\\Infrastructure\\Http\\Message\\Response::getStatus<\/a>"],[0,2,"<a href=\"Infrastructure\/Http\/Message\/Response.php.html#94\">App\\Infrastructure\\Http\\Message\\Response::sendHeaders<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Response.php.html#107\">App\\Infrastructure\\Http\\Message\\Response::addHeader<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Message\/Response.php.html#116\">App\\Infrastructure\\Http\\Message\\Response::getHeaders<\/a>"],[100,1,"<a href=\"Infrastructure\/Http\/Router.php.html#13\">App\\Infrastructure\\Http\\Router::__construct<\/a>"],[75,7,"<a href=\"Infrastructure\/Http\/Router.php.html#22\">App\\Infrastructure\\Http\\Router::getHandler<\/a>"],[100,1,"<a href=\"Infrastructure\/Listener\/Events\/RequestEvent.php.html#11\">App\\Infrastructure\\Listener\\Events\\RequestEvent::__construct<\/a>"],[100,1,"<a href=\"Infrastructure\/Listener\/Events\/RequestEvent.php.html#15\">App\\Infrastructure\\Listener\\Events\\RequestEvent::getRequest<\/a>"],[78.57142857142857,6,"<a href=\"Infrastructure\/Listener\/ListenerService.php.html#19\">App\\Infrastructure\\Listener\\ListenerService::__construct<\/a>"],[100,3,"<a href=\"Infrastructure\/Listener\/ListenerService.php.html#48\">App\\Infrastructure\\Listener\\ListenerService::dispatch<\/a>"],[100,1,"<a href=\"Infrastructure\/Lock\/Lock.php.html#15\">App\\Infrastructure\\Lock\\Lock::__construct<\/a>"],[100,1,"<a href=\"Infrastructure\/Lock\/Lock.php.html#23\">App\\Infrastructure\\Lock\\Lock::__destruct<\/a>"],[81.81818181818183,3,"<a href=\"Infrastructure\/Lock\/Lock.php.html#28\">App\\Infrastructure\\Lock\\Lock::acquire<\/a>"],[80,3,"<a href=\"Infrastructure\/Lock\/Lock.php.html#47\">App\\Infrastructure\\Lock\\Lock::release<\/a>"],[100,1,"<a href=\"Infrastructure\/Lock\/LockService.php.html#11\">App\\Infrastructure\\Lock\\LockService::__construct<\/a>"],[100,1,"<a href=\"Infrastructure\/Lock\/LockService.php.html#15\">App\\Infrastructure\\Lock\\LockService::lock<\/a>"],[100,1,"<a href=\"Infrastructure\/Session\/Listener\/SessionOnRequestListener.php.html#13\">App\\Infrastructure\\Session\\Listener\\SessionOnRequestListener::__construct<\/a>"],[100,2,"<a href=\"Infrastructure\/Session\/Listener\/SessionOnRequestListener.php.html#17\">App\\Infrastructure\\Session\\Listener\\SessionOnRequestListener::__invoke<\/a>"],[60,4,"<a href=\"Infrastructure\/Session\/NativeSessionService.php.html#9\">App\\Infrastructure\\Session\\NativeSessionService::start<\/a>"],[100,1,"<a href=\"Infrastructure\/Session\/NativeSessionService.php.html#23\">App\\Infrastructure\\Session\\NativeSessionService::set<\/a>"],[100,1,"<a href=\"Infrastructure\/Session\/NativeSessionService.php.html#28\">App\\Infrastructure\\Session\\NativeSessionService::has<\/a>"],[100,1,"<a href=\"Infrastructure\/Session\/NativeSessionService.php.html#33\">App\\Infrastructure\\Session\\NativeSessionService::get<\/a>"],[100,1,"<a href=\"Infrastructure\/Template\/TemplateService.php.html#9\">App\\Infrastructure\\Template\\TemplateService::__construct<\/a>"],[100,2,"<a href=\"Infrastructure\/Template\/TemplateService.php.html#16\">App\\Infrastructure\\Template\\TemplateService::render<\/a>"],[100,1,"<a href=\"Infrastructure\/Test\/WebTestCase.php.html#18\">App\\Infrastructure\\Test\\WebTestCase::setUp<\/a>"],[100,1,"<a href=\"Infrastructure\/Test\/WebTestCase.php.html#25\">App\\Infrastructure\\Test\\WebTestCase::tearDown<\/a>"],[100,1,"<a href=\"Infrastructure\/Test\/WebTestCase.php.html#33\">App\\Infrastructure\\Test\\WebTestCase::request<\/a>"],[100,1,"<a href=\"Infrastructure\/Test\/WebTestCase.php.html#44\">App\\Infrastructure\\Test\\WebTestCase::getContainer<\/a>"],[100,1,"<a href=\"Infrastructure\/Test\/WebTestCase.php.html#49\">App\\Infrastructure\\Test\\WebTestCase::getDb<\/a>"],[100,2,"<a href=\"Kernel.php.html#11\">App\\Kernel::__construct<\/a>"],[100,1,"<a href=\"Service\/PromoCode\/PromoCodeService.php.html#15\">App\\Service\\PromoCode\\PromoCodeService::__construct<\/a>"],[100,4,"<a href=\"Service\/PromoCode\/PromoCodeService.php.html#22\">App\\Service\\PromoCode\\PromoCodeService::reservePromoCode<\/a>"],[100,1,"<a href=\"Service\/PromoCode\/Repository\/PromoCodeRepository.php.html#12\">App\\Service\\PromoCode\\Repository\\PromoCodeRepository::__construct<\/a>"],[83.33333333333334,2,"<a href=\"Service\/PromoCode\/Repository\/PromoCodeRepository.php.html#16\">App\\Service\\PromoCode\\Repository\\PromoCodeRepository::getFreePromoCode<\/a>"],[87.5,2,"<a href=\"Service\/PromoCode\/Repository\/PromoCodeRepository.php.html#28\">App\\Service\\PromoCode\\Repository\\PromoCodeRepository::getPromoCodeByDevice<\/a>"],[90,2,"<a href=\"Service\/PromoCode\/Repository\/PromoCodeRepository.php.html#43\">App\\Service\\PromoCode\\Repository\\PromoCodeRepository::getAppliedIpCount<\/a>"],[92.85714285714286,2,"<a href=\"Service\/PromoCode\/Repository\/PromoCodeRepository.php.html#60\">App\\Service\\PromoCode\\Repository\\PromoCodeRepository::updatePromoCodeInfo<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

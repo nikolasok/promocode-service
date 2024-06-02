@@ -1,0 +1,50 @@
+services:
+
+  mysql:
+    container_name: promocode-mysql
+    image: mysql:8.4
+    environment:
+      - MYSQL_ROOT_PASSWORD=root_password
+      - MYSQL_DATABASE=promocode
+      - MYSQL_USER=${DB_USERNAME}
+      - MYSQL_PASSWORD=${DB_PASSWORD}
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./data/schema.sql:/data/schema.sql
+
+  php:
+    container_name: promocode-php
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: base
+    # uncomment the following line if you want to use a custom Dockerfile
+    #build: .
+    # uncomment the following line if you want to run this in a production environment
+    # restart: always
+    ports:
+      - "80:80" # HTTP
+    volumes:
+      - ./:/app
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    environment:
+      SERVER_NAME: ':80'
+      FRANKENPHP_CONFIG: 'worker ./bin/franken.php'
+    depends_on:
+      - mysql
+
+  phpcli:
+    container_name: promocode-phpcli
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+      target: php-cli
+    volumes:
+      - ./:/app
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_data:
