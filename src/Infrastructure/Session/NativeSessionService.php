@@ -8,19 +8,18 @@ class NativeSessionService
 {
     public function start(): void
     {
-        if (!isset($_SESSION)) {
-            if (\PHP_SAPI === 'cli') {
+        if (\PHP_SAPI === 'cli') {
+            if (!isset($_SESSION)) {
                 $_SESSION = array();
-            } else {
-                if (!session_start([
-                    'cookie_lifetime' => 31536000,
-                    'gc_maxlifetime' => 31536000,
-                ])) { // I think it's ok for current task
-                    throw new \RuntimeException('Failed to start the session.');
-                }
+            }
+        } else {
+            if (!session_start([
+                'cookie_lifetime' => 31536000,
+                'gc_maxlifetime' => 31536000,
+            ])) { // I think it's ok for current task
+                throw new \RuntimeException('Failed to start the session.');
             }
         }
-
     }
 
     public function set(string $name, mixed $value): void
